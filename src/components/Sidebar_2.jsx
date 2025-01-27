@@ -179,7 +179,7 @@ export default function MiniDrawer() {
           <DrawerHeader />
           <Routes>
             <Route path="/" element={<Typography variant="h6">Welcome to the Inbox</Typography>} />
-            <Route path="/account" element={<Subject />} />
+            <Route path="/account" element={<Account />} />
           </Routes>
         </Box>
       </Box>
