@@ -1,0 +1,235 @@
+/* Sidebar Container */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: #012345;
+    color: white;
+    transition: all 0.3s ease;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow-x: hidden; /* Prevent content overflow */
+    transition: width 0.3s ease, all 0.3s ease; /* New Line */
+  }
+  
+  
+  /* Collapsed Sidebar */
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  /* Logo and Header Styling */
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* New Line */
+    background-color: #ff9d01;
+  }
+  
+  
+  .logo {
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  
+  .collapsed-logo {
+    display: none;
+  }
+  
+  .toggle-btn {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Accordion Menu */
+  .menu .accordion-item {
+    background-color: #012345;
+    border: none; /* Remove border from accordion items */
+    border-bottom: 1px solid black;
+    transition: all 0.3s ease; /* New Line */
+    size-adjust: 2px;
+    
+  }
+  
+  /* Accordion Header Styling */
+  .accordion-header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .accordion-button {
+    background-color: #003366 !important; /* Custom background color */
+    color: white !important; /* Custom text color */
+    border: none !important; /* Remove border */
+    box-shadow: none; /* Remove default shadow */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* New Line */
+  }
+  
+  /* Remove Blue Focus Outline */
+  .accordion-button:focus {
+    box-shadow: none !important; /* Remove blue outline on focus */
+    border-color: transparent !important; /* Remove any border */
+  }
+  
+  /* Hover Effect */
+  .accordion-button:hover {
+    background-color: #012345; /* Darker shade for hover */
+    color: #ff9d01; /* Highlighted text color */
+  }
+  
+  /* Expanded Accordion Button */
+  .accordion-button:not(.collapsed) {
+    background-color: #002244 !important; /* Active state background */
+    color: white !important;
+  }
+  
+  /* Submenu Links */
+  .submenu {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .submenu-link {
+    display: block;
+    padding: 10px;
+    color: #a3aab3;
+    text-decoration: none;
+  }
+  
+  .submenu-link:hover {
+    background-color: #03467d;
+    color: white;
+  }
+  
+  /* Collapsed Sidebar Behavior */
+  .sidebar.collapsed .submenu {
+    display: none; /* Hide submenu items */
+  }
+  
+  .sidebar.collapsed .submenu-link {
+    font-size: 0; /* Effectively hide submenu links */
+  }
+  
+  .sidebar.collapsed .submenu-link:hover {
+    font-size: 0;
+  }
+  
+  /* Hover Box Styling */
+  .sidebar.collapsed .accordion-item:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 20;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar.collapsed .accordion-item:hover .submenu-link {
+    font-size: 14px;
+    padding: 8px 10px;
+    color: white;
+    display: block;
+  }
+  
+  /* Icon Alignment */
+  .accordion-header .icon {
+    margin-right: 10px;
+    color: #ff9d01;
+  }
+  
+  .sidebar.collapsed .accordion-header .icon {
+    margin-right: 0;
+  }
+  
+  /* Chevron Icon Styling */
+  .chevron-icon {
+    margin-right: 10px; /* Adds space between the icon and link text */
+    font-size: 14px;
+    color: #a3aab3; /* Optional color for the chevron icon */
+  }
+  
+  /* Hover Box Chevron Styling */
+  .sidebar.collapsed .accordion-item:hover .chevron-icon {
+    color: white;
+  }
+  
+  /* Smooth Transitions */
+  .accordion-item,
+  .submenu-link,
+  .icon {
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar.collapsed .accordion-button::after {
+    display: none !important; /* Remove the default Bootstrap accordion arrow */
+  }
+  
+  
+  .sidebar.collapsed .accordion-button {
+    pointer-events: none; /* Disable the toggle action when collapsed */
+  }
+  
+  .sidebar.collapsed .accordion-button.collapsed {
+    background-color: transparent; /* Remove hover effect */
+  }  
+  
+  /* Sidebar.css */
+
+/* Ensure logout button is positioned at the bottom of the sidebar */
+.logout-button-container {
+  margin-top: auto; /* This will push the logout button to the bottom */
+  padding: 10px;
+}
+
+/* Styling for the logout button */
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red; /* Red color for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the logout button */
+.logout-button:hover {
+  background-color: darkred; /* Darker red when hovered */
+}
+
+/* Icon and text styling for the button */
+.logout-icon {
+  margin-right: 10px; /* Space between the icon and text */
+}
+
+/* Optional: Hide the text when collapsed */
+.logout-title {
+  display: inline-block;
+}
+
+/* Responsive: Ensure the button remains functional and styled in collapsed state */
+.sidebar.collapsed .logout-title {
+  display: none;
+}
+
+
+

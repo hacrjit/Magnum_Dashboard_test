@@ -1,0 +1,171 @@
+/* Transport Page Container */
+.transport-page-container {
+  /* padding: 20px; */
+  /* background-color: #f9f9f9; */
+}
+
+.transport-page-layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.transport-page-add-transport-card,
+.transport-page-list-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transport-page-add-transport-card {
+  max-width: 28%; /* 30% width */
+}
+
+.transport-page-list-card {
+  max-width: 70%;
+  overflow-x: auto;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.transport-page-error {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+.transport-page-table {
+  position: relative;
+  overflow-x: none;
+  width: 100%;
+}
+
+.transport-page-list-card .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.transport-page-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.transport-page-save,
+.transport-page-reset {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.transport-page-save {
+  background-color: #007bff;
+  color: white;
+}
+
+.transport-page-reset {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.transport-page-save:hover {
+  background-color: #0056b3;
+}
+
+.transport-page-list-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transport-page-list-card th,
+.transport-page-list-card td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transport-page-list-card td {
+  color: #555;
+}
+
+.transport-page-list-card tr:hover {
+  background-color: #f1f1f1;
+}
+
+.transport-page-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.transport-page-pagination button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.transport-page-pagination button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .transport-page-layout-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transport-page-add-transport-card,
+  .transport-page-list-card {
+    max-width: 100%;
+  }
+
+  .transport-page-form-group {
+    margin-bottom: 15px;
+  }
+
+  .transport-page-save,
+  .transport-page-reset {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .transport-page-list-card table {
+    font-size: 14px;
+  }
+}

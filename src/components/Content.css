@@ -1,0 +1,15 @@
+.content-area {
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+    /* height: 100vh; */
+  }
+  
+  .content-area h3 {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .content-area p {
+    font-size: 16px;
+  }
+  

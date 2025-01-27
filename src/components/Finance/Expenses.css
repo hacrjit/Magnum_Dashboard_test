@@ -1,0 +1,176 @@
+.expenses-fix{
+  padding: 20px;
+}
+.expenses-container {
+padding: 2rem;
+background: white;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* margin-left: 20px; */
+}
+
+h1 {
+font-size: 1.5rem;
+color: #333;
+margin-bottom: 1.5rem;
+}
+
+.search-section {
+display: flex;
+gap: 1rem;
+margin-bottom: 2rem;
+}
+
+.search-section input {
+flex: 1;
+padding: 0.75rem;
+border: 1px solid #e2e8f0;
+border-radius: 6px;
+font-size: 0.875rem;
+}
+
+.search-section input:focus {
+outline: none;
+border-color: #4f46e5;
+box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2);
+}
+
+.expenses-search-btn {
+padding: 0.75rem 2rem;
+background: #ffc107 !important;
+color: white;
+border: none;
+border-radius: 6px;
+font-weight: 500;
+cursor: pointer;
+transition: background-color 0.2s;
+flex-shrink: 0; /* Ensure button doesn't shrink */
+height: 50px;
+}
+
+.expenses-search-btn:hover {
+background: #042954 !important;
+
+}
+
+.table-container {
+overflow-x: auto;
+margin-bottom: 1.5rem;
+background: white;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+white-space: nowrap;
+}
+
+th {
+background: #f8fafc;
+padding: 1rem;
+text-align: left;
+font-weight: 600;
+color: black;
+cursor: pointer;
+user-select: none;
+}
+
+th:hover {
+background: #f1f5f9;
+}
+
+td {
+padding: 1rem;
+border-bottom: 1px solid #e2e8f0;
+color:black;
+background: white;
+}
+
+tr:hover {
+background: #e0e1e2;
+}
+
+.status-badge {
+padding: 0.25rem 1rem;
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 500;
+}
+
+.status-badge.paid {
+background: #22c55e;
+color: white;
+}
+
+.status-badge.due {
+background: #ef4444;
+color: white;
+}
+
+.action-btn {
+background: none;
+border: none;
+font-size: 1.25rem;
+cursor: pointer;
+padding: 0.25rem 0.5rem;
+border-radius: 4px;
+background: none !important;
+color: black !important;
+}
+
+
+.pagination {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+
+.pagination button {
+padding: 0.5rem 1rem;
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+border-radius: 6px;
+color: black;
+cursor: pointer;
+transition: all 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+background:#ffb300 ;
+border-color: #cbd5e1;
+}
+
+.pagination button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+.pagination span {
+color: black;
+font-size: 0.875rem;
+}
+
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status-badge.pending {
+  background-color: rgb(255,161,1);
+  color: white;
+}
+
+.status-badge.rejected {
+  background-color: red;
+  color: white;
+}
+
+.status-badge.approved {
+  background-color: green;
+  color: white;
+}
+

@@ -1,0 +1,243 @@
+/* Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #001f3f;
+  --accent-color: #ffc107;
+  --border-color: #ddd;
+  --text-color: #333;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --border-radius: 8px;
+  --shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* Breadcrumb
+.breadcrumb {
+  margin-bottom: var(--spacing-lg);
+} */
+
+.breadcrumb-item {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcrumb-separator {
+  margin: 0 var(--spacing-xs);
+}
+
+.breadcrumb-item.active {
+  color: var(--text-color);
+}
+
+/* Reusable Card */
+.card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.side-icon,
+.user-dot {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-md);
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Form Header & Layout */
+.form-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.account-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* Gray boxes without borders */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  transition: box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.address-row {
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.address-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.form-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.save-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.reset-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.save-btn:hover {
+  background-color: #e0a800;
+}
+
+.reset-btn:hover {
+  background-color: #001833;
+}
+
+/* Users Container */
+.users-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+}
+
+/* All Users Card */
+.all-users-card {
+  flex: 1;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: var(--spacing-xs);
+}
+
+.user-item:hover {
+  background-color: #f0f0f0;
+}
+
+.user-item--active {
+  background-color: #DEBBBB;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  margin-left: var(--spacing-sm);
+}
+
+/* User Details Card */
+.user-details-card {
+  flex: 2;
+}
+
+.user-details-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--spacing-md);
+}
+
+.user-details-info {
+  display: grid;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.user-details-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1024px) {
+  .users-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .account-form-row {
+    grid-template-columns: 1fr;
+  }
+  .address-group {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-buttons {
+    flex-direction: column;
+  }
+  .user-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #646464; */
+}
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.students-dashboard-admin>h2{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.students-dashboard-admin>p{
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(24, 1, 1, 0.549);
+}
+.students-dashboard-home{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.students-dashboard-home>.student-first-icon{
+    /* height: 10px;
+    width: 10px; */
+    color: orange;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.students-dashboard-home>.students-student{
+    padding-left: 20px;
+    color: orange;
+}
+
+
+.student-dashboard-details{
+    height: 950px;
+    width: 99%;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
+}
+.student-dashboard-details>.student-dashboard-aboutme{
+    height: 950px;
+    width: 420px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-left: 20px;
+   
+   
+}
+.student-dashboard-name{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.student-dashboard-aboutme>.student-dashboard-name>p{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-left: 30px;
+
+}
+.student-dashboard-first-dots{
+    height: 30px;
+    width: 30px;
+    color: #bcbcbc;
+    cursor: pointer;
+}
+.student-dashboard-photo-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.student-dashboard-photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid green;
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: aqua;
+}
+.student-dashboard-photo>img{
+        padding-bottom: 30px;
+        object-fit: cover;
+}
+.student-dashboard-bio{
+    margin-right: 40px;
+}
+.student-dashboard-bio>.student-main-name{
+    font-weight: bold;
+    padding-right: 20px;
+}
+.student-dashboard-bio-data{
+    color: #646464;
+    line-height: 35px;
+}
+
+.student-dashboard-complete-details {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.student-dashboard-complete-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+.student-dashboard-complete-details li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  
+}
+.student-dashboard-complete-details .key {
+  flex: 1;
+  font-weight: bold;
+}
+.student-dashboard-complete-details .value {
+  flex: 2;
+  padding-left: 10px;
+}
+.student-dashboard-complete-details li span {
+  display: inline-block;
+}
+.student-dashboard-complete-details .key, .value {
+  min-width: 150px; /* Set minimum width for alignment */
+}
+.student-dashboard-complete-details .value {
+  text-align: left; /* Align the values to the left */
+}
+
+
+
+  
+  .student-dashboard-complete-details ul li strong {
+    margin-right: 10px; /* Adds spacing between key and value */
+  }
+
+
+.student-dashboard-details>.student-dashboard-second-container{
+    height: 950px;
+    width: 900px;
+    /* border: 1px solid orange; */
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+   
+}
+.student-dashboard-second-container .student-dashboard-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.student-dashboard-card  .students-dashboard-cards1{
+        height: 130px;
+        width: 280px;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .students-dashboard-cards1 .student-icon-circle1{
+        width: 90px;
+       height:90px;
+        border-radius: 50%;
+        margin-left: 20px;
+        background-color: #f3e5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        color: purple;
+
+
+    }
+
+    .student-dashboard-card .students-dashboard-cards2{
+        height: 130px;
+        width: 280px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+    }
+    .students-dashboard-cards2 .student-icon-circle2{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+        background-color: #e1f1ff;
+        color: #3f7afc;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    
+    
+.student-dashboard-card .students-cards3{
+        height: 130px;
+        width: 280px;
+        /* border: 1px solid red;  */
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+    }
+    .student-dashboard-card .student-icon-circle3{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+        background-color: #fff2d8;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffa001;
+
+    }
+    .student-dashboard-second-container{
+       
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .moved {
+        transform: translateX(-300px); /* Adjust the value to control how much the cards move */
+    }
+    
+    .students-dashboard-cards1, .students-dashboard-cards2, .students-cards3 {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    
+    .student-dashboard-second-container .student-notification-card{
+
+      width: 50%;
+      height: 60%;
+      margin-left: 20px;
+
+
+    }
+   
+    .student-dashboard-second-container .student-notification-card>p{
+        color: #646464;
+        font-size: 20px;
+    }
+
+    
+
+    .student-dashboard-all-eaxm-result{
+        height: 790px;
+        width: 900px;
+        /* border: 1px solid red; */
+        margin-top: 30px;
+        background-color: #fff;
+        padding: 8px;
+    
+    }
+    .student-dashboard-all-eaxm-result .student-heading-container2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .student-dashboard-all-eaxm-result .student-all-results-name{
+      margin-top: 15px;
+        margin-left: 20px;
+        font-size: 28px;
+    }
+    .student-dashboard-all-eaxm-result .all-exam-results-dots{
+        height: 30px;
+        width: 30px;
+        color: #646464;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .student-dashboard-all-eaxm-result .student-input-container1{
+        height: 40px;
+        width: 100px;
+    }
+    /* Container for inputs and button */
+    .student-dashboard-all-eaxm-result .search-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    gap: 10px; /* Space between inputs and button */
+    margin: 20px 0; /* Optional margin for spacing around the section */
+}
+
+/* Common styles for inputs */
+.student-dashboard-all-eaxm-result .student-input1,
+.student-input2,
+.student-input3 {
+    flex: 1; /* Ensures inputs take up equal space */
+    padding: 10px; /* Adds padding inside inputs */
+    font-size: 16px; /* Adjust font size */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Removes default focus outline */
+    transition: border-color 0.3s ease; /* Smooth border transition on focus */
+}
+
+/* Highlight input on focus */
+.student-dashboard-all-eaxm-result .student-input1:focus,
+.student-input2:focus,
+.student-input3:focus {
+    border-color: #4caf50; /* Green border on focus */
+}
+
+/* Button styles */
+.student-dashboard-all-eaxm-result .student-button1 {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    background-color:orange; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.student-dashboard-all-eaxm-result .student-button1:hover {
+    background-color: navy; /* Darker green on hover */
+}
+
+/* Optional: Add a before pseudo-element to inputs */
+.student-dashboard-all-eaxm-result .student-input1::before,
+.student-input2::before,
+.student-input3::before {
+    content: ''; /* No text, just styling */
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #4caf50; /* Small green indicator */
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+/* Ensure inputs and button are in the same line */
+.student-dashboard-all-eaxm-result .search-container > input,
+.search-container > button {
+    margin: 10px; /* No extra margins */
+    flex-shrink: 0; /* Prevent shrinking of inputs and button */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+}
+
+/* ==================== */
+
+.student-dashboard-all-eaxm-result .student-dashboard-table-container {
+    margin: 10px;
+    overflow-x: auto; /* Ensures horizontal scrolling on small screens */
+  }
+  
+  .student-dashboard-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .student-dashboard-table-container thead th {
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer; /* Pointer cursor for sortable headers */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .student-dashboard-table-container thead th:hover {
+    background-color: #ddd; /* Highlight header on hover */
+  }
+  
+  .student-dashboard-table-container tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .student-dashboard-table-container tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternate rows */
+  }
+  
+  .student-dashboard-table-container  input[type='checkbox'] {
+    transform: scale(1.2); /* Enlarges checkboxes */
+  }
+
+
+  .student-dashboard-table-container .student-dashboard-all-pagination{
+    display: flex;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 20px;
+  }
+  
+  .student-dashboard-all-pagination .student-previous{
+    margin-right: 10px;
+    padding-top: 5px;
+    color: #333;
+  }
+  .student-dashboard-all-pagination .student-next{
+    padding-top: 5px;
+    color: #333;
+  }
+  .student-dashboard-all-pagination .student-button2{
+    height: 40px;
+    width: 40px;
+    color: black;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  .student-dashboard-all-pagination .student-button2:hover{
+    background-color: white;
+  }
+
+
+  .student-dashboard-att-cal-noti{
+    height: 450px;
+    width: 98%;
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+    margin-left: 29px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .student-dashboard-att-cal-noti .student-attendance{
+    height: 450px;
+    width: 420px;
+    /* border: 1px solid blue; */
+    background-color: #fff;
+  }
+  .student-dashboard-att-cal-noti .custom-tooltip {
+    background-color: #4B8DFF; /* Cool blue background */
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for modern look */
+    display: inline-block;
+    position: relative;
+  }
+  
+  .custom-tooltip p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .custom-tooltip span {
+    color: #FFD700; /* Gold color for the percentage */
+    font-weight: normal;
+  }
+  
+  /* Optional: Add an arrow for the tooltip */
+  .custom-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position the arrow below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #4B8DFF; /* Matches the background color */
+  }
+  .student-dashboard-chart-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  }
+  .student-dashboard-dots-chart{
+    height: 30px;
+    width: 30px;
+    color: #646464;
+    cursor: pointer;
+    /* padding-bottom: 10px; */
+  }
+
+.student-dashboard-event-calender{
+    height: 450px;
+    width: 420px;
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    overflow: hidden;
+    padding: 10px;
+
+  }
+
+  .calendar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-header {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+.calendar-month {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  
+  .calendar-view-buttons .btn {
+    margin: 0 5px;
+    border-radius: 20px;
+  }
+  
+  .calendar-view-buttons .active {
+    color: white;
+  }
+  
+  
+  .calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calendar-days{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .calendar-day-name,
+  .calendar-cell {
+    flex: 1;
+    width: 14.28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+  }
+
+  .calendar-body .calendar-row{
+
+    display: flex;
+    width: 100%;
+  }
+  
+  .calendar-cell {
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .calendar-cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-cell.disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  
+  .calendar-cell.selected {
+    background-color: #f00;
+    color: #fff;
+  }
+
+  
+
+  .student-dashboard-last-notification {
+    height: 450px;
+    width: 420px;
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    overflow-y: scroll; /* This enables the scrollbar inside student-last-notification */
+    scrollbar-width: thin; /* Firefox scrollbar style */
+  }
+  
+  /* Style the scrollbar for Chrome, Safari, and Edge */
+  .student-dashboard-last-notification::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .student-dashboard-last-notification::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+  }
+  
+  .student-dashboard-last-notification::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Hover effect for the scrollbar thumb */
+  }
+  
+  .student-dashboard-containers21 {
+    height: 750px; /* Fixed height */
+    width: 400px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* overflow-y: scroll; Removed from here */
+  }
+  
+  .student-dashboard-containers21 .student-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid #eaeaea;
+    z-index: 10;
+  }
+  
+  .student-dashboard-containers21 .student-notifications {
+    overflow-y: auto; /* Enables scrolling for the notifications only */
+    flex: 1; /* Takes remaining space */
+    padding: 20px;
+  }
+  
+  .student-dashboard-containers21 .student-dashboard-notification-item {
+    margin: 20px 0;
+  }
+  
+  .student-dashboard-notification-item .student-date {
+    display: inline-block; /* Ensures the date container adjusts to content */
+    height: auto; /* Allows dynamic height */
+    width: fit-content; /* Adjusts to content size */
+    padding: 5px 10px; /* Reduces padding for a compact look */
+    margin-bottom: 10px; /* Adds spacing below */
+    border-radius: 20px;
+    color: white;
+    text-align: center; /* Centers text horizontally */
+    font-size: 14px; /* Smaller font size for a clean one-line look */
+    line-height: 2; /* Removes extra spacing in the line */
+  }
+  
+  .student-dashboard-notification-item a {
+    text-decoration: none !important;
+  }
+  
+  .student-dashboard-notification-item a > p {
+    line-height: 1.5;
+    font-weight: 550;
+    color: black;
+  }
+  
+  .student-dashboard-notification-item .student-time {
+    line-height: 1;
+    color: #646464;
+  }
+  .time > span {
+    color: #a4a4a4;
+  }
+  
+  .student-dashboard-notification-item hr {
+    border: none;
+    border-top: 2px solid rgb(233, 230, 230);
+    line-height: 5;
+  }
+  .student-dott{
+    height: 30px;
+    width: 30px;
+    color: #646464;
+    cursor: pointer;
+  }

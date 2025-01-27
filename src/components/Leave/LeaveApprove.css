@@ -1,0 +1,216 @@
+.leaveapprove-container {
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .leaveapprove-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .leaveapprove-wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    padding: 2rem;
+  }
+  
+  .leaveapprove-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  .leaveapprove-overflow-x-auto {
+    overflow-x: auto;
+  }
+  
+  .leaveapprove-table {
+    width: 100%;
+  }
+  
+  .leaveapprove-thead-tr {
+    background-color: #f9fafb;
+  }
+  
+  .leaveapprove-th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .leaveapprove-tbody {
+    border-top: 1px solid rgba(229, 231, 235, 0.3);
+  }
+  
+  .leaveapprove-tbody-tr:hover {
+    background-color: #f9fafb;
+    cursor: pointer;
+  }
+  
+  .leaveapprove-td {
+    padding: 1rem 1.5rem;
+  }
+  
+  .leaveapprove-flex {
+    display: flex;
+  }
+  
+  .leaveapprove-items-center {
+    align-items: center;
+  }
+  
+  .leaveapprove-avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    flex-shrink: 0;
+  }
+  
+  .leaveapprove-avatar-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+  }
+  
+  .leaveapprove-ml-4 {
+    margin-left: 1rem;
+  }
+  
+  .leaveapprove-text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .leaveapprove-font-medium {
+    font-weight: 500;
+  }
+  
+  .leaveapprove-text-gray-900 {
+    color: #1f2937;
+  }
+  
+  .leaveapprove-text-gray-500 {
+    color: #6b7280;
+  }
+  
+  .leaveapprove-status {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+  }
+  
+  .leaveapprove-bg-yellow-100 {
+    background-color: #fef3c7;
+  }
+  
+  .leaveapprove-text-yellow-800 {
+    color: #92400e;
+  }
+  
+  .leaveapprove-bg-green-100 {
+    background-color: #d1fae5;
+  }
+  
+  .leaveapprove-text-green-800 {
+    color: #065f46;
+  }
+  
+  .leaveapprove-bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  .leaveapprove-text-red-800 {
+    color: #b91c1c;
+  }
+  
+  .leaveapprove-action-button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .leaveapprove-action-button:hover {
+    scale: 1.02;
+  }
+  
+  .leaveapprove-modal {
+    position: fixed;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .leaveapprove-modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* animation: slideIn 0.3s ease-in-out; */
+  }
+  
+  .leaveapprove-modal-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .leaveapprove-modal-close:hover,
+  .leaveapprove-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .leaveapprove-details-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .leaveapprove-details-photo{
+    display: flex;
+    padding: auto;
+    justify-content: right;
+    margin-bottom: -100px;
+  }
+  
+  .leaveapprove-details-photo img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff9d01;
+  }
+  
+  .leaveapprove-details-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }

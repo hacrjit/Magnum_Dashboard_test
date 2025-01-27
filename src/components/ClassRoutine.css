@@ -1,0 +1,221 @@
+.classschedule-page {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.classschedule-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.classschedule-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.classschedule-controls select,
+.classschedule-controls input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  height: 44px; /* Ensure consistent height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: border-color 0.3s ease;
+}
+
+.classschedule-controls select:focus,
+.classschedule-controls input[type="date"]:focus {
+  outline: none;
+  border-color: #FE9F3D;
+}
+
+.classschedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.classschedule-table th,
+.classschedule-table td {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+
+.classschedule-table th {
+  background-color: #FE9F3D;
+  color: #333;
+  font-weight: 600;
+}
+
+.classschedule-table th:hover {
+  background-color: #FE9F3D;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.classschedule-table td {
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.classschedule-editable-cell:hover {
+  background-color: #e0f7fa;
+}
+
+.classschedule-editable-cell:active {
+  background-color: #b2ebf2;
+}
+
+.classschedule-editable-cell span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #252424;
+}
+
+.classschedule-editable-cell span.substituted {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+/* Modal styles */
+.classroutine-edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classroutine-edit-modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classroutine-edit-modal-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.classroutine-edit-modal-content label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.classroutine-edit-modal-content input[type="text"],
+.classroutine-edit-modal-content input[type="checkbox"],
+.classroutine-edit-modal-content input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.classroutine-edit-radio-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.classroutine-edit-radio-label input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.classroutine-edit-modal-content button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.classroutine-edit-modal-content button:last-child {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.classroutine-edit-modal-content button:hover {
+  opacity: 0.9;
+}
+
+
+.classschedule-editable-cell div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .classschedule-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .classschedule-container {
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  .classschedule-table th,
+  .classschedule-table td {
+    padding: 12px;
+  }
+
+  .classroutine-edit-modal-content {
+    width: 90%;
+  }
+
+  .classschedule-table-container {
+    overflow-x: auto;
+  }
+
+  .classschedule-table {
+    width: 100%;
+    min-width: 600px; /* Adjust based on your table's content */
+  }
+
+  .classschedule-table td div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

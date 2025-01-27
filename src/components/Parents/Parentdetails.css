@@ -1,0 +1,137 @@
+/* Parent Details Main Container */
+.parentdetails-main-container {
+    width: 100%;
+    height: 120vh;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container-parent-details {
+    margin-top: 30px;
+    border-radius: 8px;
+    height: auto;
+  }
+  
+  /* Page Title */
+  .page-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Card Styling */
+  .details-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Top-Right Icons */
+  .card-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+    margin-left: 10px;
+  }
+  
+  .icon:hover {
+    color: #000;
+  }
+  
+  /* Parent Photo */
+  .parent-photo {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 100%; /* Ensure photo is fully responsive */
+  }
+  
+  /* Bio Text */
+  .parent-bio {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Details List */
+  .details-list p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .details-list strong {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Breadcrumb Styling */
+  .mam {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .mam p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .was {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .icc {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+  
+  /* Dropdown for Actions */
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .ellipsis {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    top: 30px;
+    right: 0;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content p {
+    margin: 0;
+    padding: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .dropdown-content p:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

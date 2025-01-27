@@ -1,0 +1,126 @@
+/* .staff-attendance-container {
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  
+} */
+/* Container styling */
+.staff-attendance-container {
+    font-family: Arial, sans-serif;
+    /* margin: 20px auto; */
+    padding: 20px;
+    max-width: 100%;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Title styling */
+  .staff-attendance-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Filter section styling */
+  .staff-attendance-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .staff-attendance-select {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+  }
+  
+  .staff-attendance-select label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .staff-attendance-dropdown,
+  .staff-attendance-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Button styling */
+  .staff-attendance-search-button {
+    padding: 10px 15px;
+    background-color: #ff9d01;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .staff-attendance-search-button:hover {
+    background-color: #ff9d01;
+  }
+  
+  /* Search bar styling */
+  .staff-attendance-search-bar {
+    margin: 10px 0;
+  }
+  
+  .staff-attendance-search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Table styling */
+  .staff-attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .staff-attendance-table th,
+  .staff-attendance-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .staff-attendance-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .staff-attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Attendance status styling */
+  .attendance-present {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .attendance-absent {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .staff-attendance-filters {
+      flex-direction: column;
+    }
+  }

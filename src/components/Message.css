@@ -1,0 +1,173 @@
+/* / General Styling / */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .messaging-page {
+    /* padding: 20px; */
+  }
+  
+  /* / Header Section / */
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #2c2c6c;
+  }
+  
+  .header p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* .breadcrumb {
+    color: #777;
+    font-weight: bold;
+    font-size: medium;
+  } */
+  
+  /* / Content Section / */
+  .content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 10px;
+    /* padding-bottom: 170px; */
+  }
+  
+  /* / Form Section / */
+  .message-form {
+    width: 60%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-form h2 {
+    margin-bottom: 20px;
+    color: #161618;
+  }
+  
+  .message-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #777;
+  }
+  
+  .message-form input,
+  .message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    border: none;
+  }
+  
+  .message-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .save-button,
+  .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 125px;
+  }
+  
+  .save-button {
+    background-color: #fbbd05;
+    color: white;
+  }
+  
+  .reset-button {
+    background-color: #2c2c6c;
+    color: white;
+    width: 125px;
+  }
+  
+  
+  .formbd:focus{
+    outline: none;
+    /* / border-color: transparent; / */
+  }
+  /* / Status Section / */
+  .message-status {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .success-message,
+  .error-message,
+  .success-placeholder,
+  .error-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-message,
+  .success-placeholder {
+    background-color: #e7f9e7;
+    color: #4caf50;
+  }
+  
+  .error-message,
+  .error-placeholder {
+    background-color: #fdeaea;
+    color: #f44336;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+
+/* ...existing code... */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .message-form,
+  .message-status {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+  .message-form h2 {
+    font-size: 18px;
+  }
+  .save-button,
+  .reset-button {
+    width: 100%;
+  }
+}
+/* ...existing code... */
+  

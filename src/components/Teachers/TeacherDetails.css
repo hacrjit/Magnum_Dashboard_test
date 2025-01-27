@@ -1,0 +1,74 @@
+.teacherdetails-main-container{
+
+  width: 100%;
+  height: 120vh;
+  padding: 20px;
+
+}
+
+/* container */
+.container-teacher-details {
+  margin-top: 30px;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+ /* Card Styling */
+.details-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Top-Right Icons */
+.card-icons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+  margin-left: 10px;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+/* Teacher Photo */
+.teacher-photo {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 100%; /* Ensure photo is fully responsive */
+}
+
+/* Bio Text */
+.teacher-bio {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Details List */
+.details-list p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.details-list strong {
+  font-weight: 600;
+  color: #000;
+}

@@ -1,0 +1,181 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* Header Bar */
+.header-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Adjust padding for spacing */
+}
+
+/* Search Bar */
+.header-search-bar {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+
+.search-icon {
+  color: #9e9e9e;
+}
+
+.search-input {
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 0;
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  flex-grow: 1;
+}
+
+/* Icons */
+.icon-wrapper {
+  position: relative; /* Ensure the icon is the reference for dropdown positioning */
+  color: #333;
+  cursor: pointer;
+  margin-right: 20px; /* Add space between icons */
+}
+
+/* Make the icons smaller */
+.icon-wrapper svg {
+  width: 20px; /* Set the width of the icon */
+  height: 16px; /* Set the height of the icon */
+}
+
+.icon-wrapper:hover {
+  color: #555;
+}
+
+/* User Profile */
+.user-profile img {
+  width: 24px; /* Smaller profile image */
+  height: 24px; /* Smaller profile image */
+}
+
+.user-info {
+  font-size: 12px;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20px; /* Add spacing between language dropdown and other icons */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 35px; /* Position the dropdown below the icon */
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: none; /* Initially hide the dropdown */
+  min-width: 150px; /* Optional: Set a minimum width for the dropdown */
+}
+
+.dropdown-menu p {
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-menu p:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu p:hover {
+  background-color: #f8f8f8;
+}
+
+/* Prevent Dropdown Clipping */
+.position-relative {
+  position: relative;
+}
+
+/* Show the dropdown when active */
+.icon-wrapper.active .dropdown-menu {
+  display: block; /* Display the dropdown when the parent is active */
+}
+
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* Profile Dropdown */
+
+
+/* Profile Dropdown */
+.profile-dropdown-menu {
+  position: absolute;
+  top: 45px; /* Adjust for proper placement */
+  right: 0;
+  background-color: white; /* White background for the dropdown options */
+  color: #333; /* Black text for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1000;
+  width: 200px; /* Set a fixed width */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Profile Header (Name) */
+.profile-header {
+  display: block; /* Ensure proper block formatting */
+  background-color: #f89c24; /* Orange background */
+  color: white; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center; /* Center-align the text */
+  padding: 10px 15px; /* Add padding */
+}
+
+/* Dropdown Options */
+.profile-dropdown-menu p {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333; /* Dark text for contrast */
+  background-color: white; /* White background */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icons and text */
+  border-bottom: 1px solid #e5e5e5; /* Separator for options */
+}
+
+.profile-dropdown-menu p:last-child {
+  border-bottom: none; /* Remove bottom border for the last option */
+}
+
+.profile-dropdown-menu p:hover {
+  background-color: #f8f8f8; /* Light grey hover effect */
+}
+
+/* Dropdown Arrow */
+.profile-dropdown-menu:before {
+  content: '';
+  position: absolute;
+  top: -8px; /* Position above the dropdown */
+  right: 20px; /* Center the arrow */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f89c24; /* Match the profile-header background */
+}

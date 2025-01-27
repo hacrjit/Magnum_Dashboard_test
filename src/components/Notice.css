@@ -1,0 +1,186 @@
+.notice-board-container {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-bar{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .searcharea{
+    display: flex;
+    gap: 10px;
+    width: 1;
+  }
+  
+  .searcharea input{
+    width: 150px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* / Create Notice Section / */
+  .create-notice {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .create-notice h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  .create-notice form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .create-notice input,
+  .create-notice textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .create-notice textarea {
+    resize: none;
+    height: 80px;
+  }
+  .create-notice .save-notice {
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .create-notice .save-notice:hover {
+    background-color: #574ed8;
+  }
+  
+  /* / Notice Board Section / */
+  .notice-board {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .notice-board h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* / Search Bar / */
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  /* / Notices Section / */
+  .notices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .notice {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-left: 4px solid #6c63ff;
+    border-radius: 4px;
+  }
+  .notice h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  .notice p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .notice span {
+    display: block;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  /* / Scrollbar Styling / */
+  .notices::-webkit-scrollbar {
+    width: 6px;
+  }
+  .notices::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  .notices::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+  }
+  
+  .Notice-search-bar{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .Notice-search-button{
+    padding: 10px 10px;
+    background-color: #4e4d66;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 44px;
+  }
+  
+
+/* for responsive  */
+@media (max-width: 768px) {
+  .notice-board-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .create-notice,
+  .notice-board {
+    width: 100%;
+    margin: 0;
+  }
+  .search-bar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .notice-board-container {
+    padding: 10px;
+  }
+  .create-notice,
+  .notice-board {
+    width: 100%;
+  }
+  .search-bar input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.teadashhead {
+  width: 100%;
+  height: auto;
+}
+
+.welcome-notes-box {
+  width: 100%;
+  padding-top: 25px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teadashhead .dte-tme-box {
+  width: 385px;
+  height: 75px;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.teadashhead .dte-tme-box button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(252, 237, 211);
+  color: orange;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.teachers-dash-main-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.teadash-attendance-student-details-box {
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+}
+
+.teadash-calendar-reports-details-box {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+}
+
+.teadash-attendance-overview {
+  width: 110%;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacherdash-profile-box {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.teacherdash-profile-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.teadash-attendance-overview-details {
+  width: 70%;
+  height: auto;
+}
+
+.teadash-attendance-overview:first-child h5 {
+  font-size: 20px;
+  color: #e16e68;
+}
+
+.teadash-students-numbers {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teadash-students {
+  width: 30%;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.teadash-students h1 {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: orange;
+  background-color: rgb(252, 237, 211);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.teadash-students p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(138, 137, 137);
+}
+
+.teadash-myschdule-details {
+  width: 100%;
+  height: 440px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow-y: hidden;
+  border: 1px solid #ddd;
+}
+
+.teadash-myschdule-details.clicked {
+  width: 110%;
+  height: auto;
+}
+
+.teadash-myschdule-details h5 {
+  font-size: 20px;
+  color: #e16e68;
+}
+
+.teadash-scheduled-classdetails {
+  width: 100%;
+  padding: 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teadash-scheduled-classdetails p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: orange;
+}
+
+.teadash-scheduled-classdetails p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: gray;
+}
+
+.teachers-dash-main-content .teadash-scheduled-classdetails button {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
+}
+
+.teadash-breakdetails {
+  width: 100%;
+  padding: 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teadash-breakdetails p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: orange;
+}
+
+.teadash-breakdetails p:nth-of-type(2) {
+  font-size: 22px;
+  padding: 7px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: gray;
+}
+
+.teadash-myschdule-details .viewall {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  background: none;
+  color: gray;
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+.teadash-myschdule-details .viewall.clicked {
+  display: none;
+}
+
+.teadash-myschdule-details .hide {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  background: none;
+  color: gray;
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+.teadash-student-performance-details-box {
+  width: 110%;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teadash-student-performance-details-box h5 {
+  font-size: 20px;
+  color: #e16e68;
+  margin-bottom: 10px;
+}
+
+.teadash-student-performance-details-box .teadash-performance-dropdowns-box {
+  width: 100%;
+  text-align: right;
+}
+
+.teadash-student-performance-details-box .teadash-performance-dropdowns-box select {
+  border: 1px solid #ddd;
+  background-color: white;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.teadash-students-performances-lists-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.teadash-student-performance-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teadash-student-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teadash-student-info {
+  flex: 1;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teadash-student-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.teadash-student-percentage {
+  font-size: 14px;
+  color: #666;
+}
+
+.teadash-cl-rp-main-box {
+  width: 90%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: auto;
+  margin-left: 50px;
+  background-color: rgb(252, 237, 211);
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teadash-daily-report-box {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.teadash-report-header {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teadash-report-header h5 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: #e16e68;
+}
+
+.teadash-report-header select {
+  width: 120px;
+  padding: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.teadash-report-chart-box {
+  position: relative;
+  width: 270px;
+  height: 230px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teadash-report-chart-box div {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.teadash-report-data-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.teadash-lgnd-item {
+  display: flex;
+  align-items: center;
+}
+
+.teadash-lgnd-item .teadash-crcle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.teadash-lgnd-item .teadash-dne-crcle {
+  background: orange;
+}
+
+.teadash-lgnd-item .teadash-prgres-crcle {
+  background: red;
+}
+
+.teadash-lgnd-item .teadash-lbel {
+  font-size: 15px;
+  color: #333;
+}
+
+.teadash-calendar-box {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.teadash-event-calendar {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.teadash-calendar-header {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.teadash-calendar-month {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.calendar-view-buttons .btn {
+  margin: 0 5px;
+  border-radius: 20px;
+}
+
+.calendar-view-buttons .active {
+  color: white;
+}
+
+.teadash-calendar-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teadash-calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.teadash-calendar-day-name,
+.teadash-calendar-cell {
+  flex: 1;
+  width: 14.28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.teadash-calendar-body .teadash-calendar-row {
+  display: flex;
+  width: 100%;
+}
+
+.teadash-calendar-cell {
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.teadash-calendar-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.teadash-calendar-cell.disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.teadash-calendar-cell.selected {
+  background-color: orange;
+  color: #fff;
+}
+
+
+
+
+
+.teadash-report-chart-box {
+  position: relative;
+  width: 100%;  /* Make it responsive by using 100% width */
+  max-width: 270px;  /* Set a maximum width to avoid stretching too wide */
+  height: 230px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;  /* Optional padding */
+  box-sizing: border-box;  /* To include padding in the width and height calculation */
+}
+
+.teadash-report-chart-box div {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .teadash-report-chart-box {
+    max-width: 100%;  /* Allow full width on smaller screens */
+    height: 200px;  /* Slightly reduce height on smaller screens */
+  }
+
+  .teadash-report-chart-box div {
+    font-size: 35px;  /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .teadash-report-chart-box {
+    height: 180px;  /* Further adjust height for very small screens */
+  }
+
+  .teadash-report-chart-box div {
+    font-size: 30px;  /* Further reduce font size for very small screens */
+  }
+}
+
+

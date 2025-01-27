@@ -1,0 +1,108 @@
+/* Global Styles */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #012345;
+  color: white;
+  transition: width 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+}
+
+.sidebar-collapsed {
+  width: 70px;
+}
+
+.sidebar .logo {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sidebar .toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  padding: 0;
+  
+}
+
+.menu .submenu {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.submenu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.submenu-link:hover {
+  color: #ddd;
+}
+
+/* Main Layout */
+.main-layout {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.sidebar-collapsed + .main-layout {
+  margin-left: 70px;
+}
+
+.content-area {
+  /* padding: 20px; */
+  background-color: #f4f6f9;
+  flex-grow: 1;
+  margin-left: 0; /* Remove margin for main layout */
+}
+
+/* Header Bar */
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 101;
+}
+
+/* For Mobile View */
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .main-layout {
+      margin-left: 0;
+    }
+  }}
+

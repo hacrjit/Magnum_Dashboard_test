@@ -1,0 +1,246 @@
+.applyleave-container {
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .applyleave-section {
+    max-width: 1200rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .applyleave-wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    padding: 2rem;
+  }
+  
+  .applyleave-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  .applyleave-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .applyleave-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .applyleave-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .applyleave-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .applyleave-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .applyleave-select,
+  .applyleave-input,
+  .applyleave-textarea {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    border-radius: 0.5rem;
+  }
+  
+  .applyleave-textarea {
+    resize: vertical;
+  }
+  
+  .applyleave-file-upload {
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+    border: 2px dashed rgba(229, 231, 235, 0.3);
+    border-radius: 0.5rem;
+    background: rgba(229, 231, 235, 0.3)
+  }
+  
+  .applyleave-file-upload-text {
+    text-align: center;
+  }
+  
+  .applyleave-file-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .applyleave-file-upload-button {
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    color: #2563eb;
+    padding: 0.5rem 1rem;
+    margin-right: 0.25rem;
+  }
+  
+  .applyleave-file-input {
+    display: none;
+  }
+  
+  .applyleave-file-upload-or {
+    padding-left: 0.25rem;
+  }
+  
+  .applyleave-file-upload-info {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .applyleave-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  
+    padding: 1rem;
+  }
+  
+  .applyleave-cancel-button,
+  .applyleave-submit-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .applyleave-cancel-button {
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    color: #4b5563;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  
+  .applyleave-submit-button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .applyleave-submit-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .applyleave-balance-container {
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    padding: 2rem;
+  }
+  
+  .applyleave-balance-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .applyleave-balance-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .applyleave-balance-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .applyleave-balance-item {
+    padding: 1rem;
+    border: 1px solid rgba(229, 231, 235, 0.3);
+    border-radius: 0.5rem;
+  }
+  
+  .applyleave-balance-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .applyleave-balance-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  .applyleave-balance-days {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .applyleave-balance-total {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+
+
+/* pop up notification csss */
+  .applyleave-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .applyleave-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .applyleave-popup-close {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .applyleave-popup-close:hover {
+    background-color: #45a049;
+  }
+  

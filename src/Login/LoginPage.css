@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+  }
+
+  /* .login-main-container{
+
+    background-image: url('../components/images/School.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-Content: center;
+    align-items: 'center';
+    position: 'fixed';
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:  0;
+
+  } */
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .login-form h2 {
+    color: #333333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  /* Styling for input fields to ensure uniform size and border color */
+  .bold-input {
+    width: 100%; /* Full width within form */
+    padding: 0.8rem; /* Consistent padding */
+    margin: 0.5rem 0; /* Space between fields */
+    border: 1px solid #6f2c91; /* Brinjal color */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1rem; /* Consistent font size */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+    color: #333; /* Text color inside input */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+  }
+  
+  .bold-input:focus {
+    border-color: #6f2c91; /* Keep brinjal color on focus */
+    outline: none;
+  }
+  
+  /* Button styling with brinjal color */
+  .bold-button {
+    width: 100%; /* Full width for button */
+    padding: 0.8rem; /* Consistent padding */
+    margin-top: 1rem;
+    background-color: #6f2c91; /* Brinjal color */
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bold-button:disabled {
+    background-color: #a0a0a0; /* Disabled color */
+    cursor: not-allowed;
+  }
+  
+  .bold-button:hover:not(:disabled) {
+    background-color: #5a1e7c; /* Darker shade on hover */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #ff4d4d;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Link styling for toggle text */
+  .toggle-link {
+    margin-top: 1rem;
+    color: #666666;
+    font-size: 0.9rem;
+  }
+  
+  .toggle-link span {
+    color: #6f2c91; /* Brinjal color */
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-link span:hover {
+    color: #5a1e7c; /* Darker brinjal on hover */
+  }
+  

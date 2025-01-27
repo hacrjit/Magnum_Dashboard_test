@@ -1,0 +1,96 @@
+/* BorrowAndReturn.css */
+.borrow-return-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .borrow-section,
+  .return-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .borrow-section h3,
+  .return-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .borrow-section input,
+  .return-section input {
+    margin-right: 15px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 250px;
+  }
+  
+  .borrow-return-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .borrow-return-table th,
+  .borrow-return-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .borrow-return-table th {
+    background-color: #ff9d01;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .borrow-return-table td {
+    background-color: #ffffff;
+  }
+  
+  .borrow-return-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #ff9d01;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff9d01;
+  }
+  
+  button:active {
+    background-color: #ff9d01;
+  }
+  
+  button.return-button {
+    background-color: #ff5722;
+  }
+  
+  button.return-button:hover {
+    background-color: #e64a19;
+  }
+  
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }

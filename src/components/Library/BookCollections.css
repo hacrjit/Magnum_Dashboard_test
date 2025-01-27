@@ -1,0 +1,110 @@
+/* Book details modal */
+.book-details-modal {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-details-modal-content {
+  width: 100%;
+  text-align: center;
+}
+
+.book-details-modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.library-collection-table tbody tr {
+  cursor: pointer;
+}
+
+.library-collection-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action Buttons - Edit and Delete */
+.library-collection-edit, 
+.library-collection-delete {
+background-color: white; /* Change button background to white */
+border: 1px solid #ccc;  /* Add a light border around the button */
+padding: 5px 10px;       /* Add padding to the button */
+cursor: pointer;        /* Make the button look clickable */
+font-size: 14px;         /* Set a suitable font size */
+}
+
+/* Optional: Change text color when hovered */
+.library-collection-edit:hover,
+.library-collection-delete:hover {
+background-color: #f1f1f1;  /* Change background color on hover */
+border-color: #999;         /* Darken the border on hover */
+}
+
+/* Optional: Change text color on hover to keep visibility */
+.library-collection-edit:hover,
+.library-collection-delete:hover {
+color: #333; /* Change text color to dark for better visibility */
+}
+
+.edit-book-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-book-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px; /* Adjust width for compactness */
+  max-height: 80%; /* Limit max height */
+  overflow-y: auto; /* Make the content scrollable if it exceeds max height */
+}
+
+.edit-book-modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  font-size: 14px; /* Reduce font size to make it more compact */
+}
+
+.apply-changes-btn, .cancel-edit-btn {
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.apply-changes-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancel-edit-btn {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.library-collection-container{
+  background-color: white;
+}

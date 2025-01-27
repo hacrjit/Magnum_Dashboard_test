@@ -1,0 +1,252 @@
+/* Payroll.css */
+
+/* General Layout */
+.vidya-payroll-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vidya-search-section {
+    margin-bottom: 2rem;
+  }
+  
+  .vidya-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .vidya-search-input {
+    width: 50%;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+  }
+  
+  .vidya-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .vidya-filter-select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+  }
+  
+  .vidya-staff-pie-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  
+  /* Staff List */
+  .vidya-staff-list {
+    width: 65%;
+  }
+  
+  .vidya-staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .vidya-table-header {
+    background-color: #f9fafb;
+  }
+  
+  .vidya-table-cell {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .vidya-staff-row:nth-child(odd) {
+    background-color: #f9fafb;
+  }
+  
+  .vidya-staff-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .vidya-profile-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .vidya-status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+  }
+  
+  .vidya-status-badge.paid {
+    background-color: #d1fae5;
+    color: #10b981;
+  }
+  
+  .vidya-status-badge.unpaid {
+    background-color: #fee2e2;
+    color: #f87171;
+  }
+  
+  .vidya-view-payslip-btn {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .vidya-view-payslip-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Accordion */
+  .vidya-accordion-item {
+    margin-top: 1rem;
+  }
+  
+  .vidya-accordion-header {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0.375rem;
+  }
+  
+  .vidya-accordion-body {
+    display: none;
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-left: 3px solid #3b82f6;
+  }
+  
+  .vidya-accordion-body.open {
+    display: block;
+  }
+  
+  /* Pie Chart */
+  .vidya-pie-chart-container {
+    width: 30%;
+    padding-left: 100px;
+    box-shadow: 20px solid black;
+  }
+  
+  /* Popup */
+  .vidya-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .vidya-popup-modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .vidya-popup-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .vidya-close-btn {
+    padding: 0.5rem 1rem;
+    background-color: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .vidya-close-btn:hover {
+    background-color: #4b5563;
+  }
+  /* Popup Overlay */
+  .vidya-popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;  /* Align to the right */
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;  /* Align content to the right */
+    align-items: center;
+    z-index: 9999;
+    padding-right: 2rem; /* Optional: add some space from the right edge */
+  }
+  
+  /* Popup Modal */
+  .vidya-popup-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;  /* Ensure some space on the right side */
+  }
+  
+  /* Profile Card Style */
+  .vidya-popup-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vidya-popup-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .vidya-profile-img-popup {
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .vidya-popup-body {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .vidya-close-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .vidya-close-btn:hover {
+    background-color: #e55347;
+  }
